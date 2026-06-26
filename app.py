@@ -14,32 +14,6 @@ st.set_page_config(
 
 st.markdown("""
 <style>
-    .stApp { background-color: #0a1628; }
-    section[data-testid="stMain"] { background-color: #0a1628; }
-
-    html, body, [class*="css"], .stMarkdown, .stText, label,
-    .stRadio label, .stCheckbox label, p, span, div {
-        color: #ffffff !important;
-    }
-
-    h1, h2, h3, h4 { color: #7eb8f7 !important; }
-
-    section[data-testid="stForm"] {
-        background-color: #102040;
-        border-radius: 14px;
-        padding: 1.5rem;
-        border: 1px solid #1e3a5f;
-    }
-
-    input, textarea, select {
-        background-color: #1a2f4a !important;
-        color: #ffffff !important;
-        border: 1px solid #2e5080 !important;
-        border-radius: 8px !important;
-    }
-
-    .stSlider > div > div { background-color: #2e5080 !important; }
-
     .stFormSubmitButton > button, .stButton > button {
         background-color: #1a5cb8 !important;
         color: #ffffff !important;
@@ -51,58 +25,10 @@ st.markdown("""
     .stFormSubmitButton > button:hover, .stButton > button:hover {
         background-color: #2471d4 !important;
     }
-
-    hr { border-color: #1e3a5f !important; }
-
-    [data-testid="metric-container"] {
-        background-color: #102040;
-        border-radius: 10px;
-        padding: 0.8rem;
-        border: 1px solid #1e3a5f;
-    }
-
-    /* Multiselect и selectbox — контейнер */
-    [data-baseweb="select"] > div {
-        background-color: #1a2f4a !important;
-        border-color: #2e5080 !important;
-    }
-
-    /* Текст внутри multiselect поля */
-    [data-baseweb="select"] span,
-    [data-baseweb="select"] input,
-    [data-baseweb="select"] div {
-        color: #ffffff !important;
-        background-color: #1a2f4a !important;
-    }
-
-    /* Выбранные теги */
-    [data-baseweb="tag"] {
-        background-color: #1a5cb8 !important;
-        color: #ffffff !important;
-    }
-    [data-baseweb="tag"] span { color: #ffffff !important; }
-
-    /* Выпадающий список вариантов */
-    [data-baseweb="popover"] {
-        background-color: #1a2f4a !important;
-    }
-    [data-baseweb="menu"] {
-        background-color: #1a2f4a !important;
-    }
-    [data-baseweb="menu"] ul {
-        background-color: #1a2f4a !important;
-    }
-    [data-baseweb="menu"] li {
-        background-color: #1a2f4a !important;
-        color: #ffffff !important;
-    }
-    [data-baseweb="menu"] li:hover {
-        background-color: #2e5080 !important;
-        color: #ffffff !important;
-    }
-    [data-baseweb="option"] {
-        background-color: #1a2f4a !important;
-        color: #ffffff !important;
+    section[data-testid="stForm"] {
+        border-radius: 14px;
+        padding: 1.5rem;
+        border: 1px solid rgba(128,128,128,0.3);
     }
 </style>
 """, unsafe_allow_html=True)
